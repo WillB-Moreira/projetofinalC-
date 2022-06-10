@@ -1,4 +1,34 @@
+/*Criando o topo do site*/
+
+#topo{
+    width: 100%;
+
+}
+
+
+
+
 body{
-    background-color: blue;
+    background-color: cornsilk;
+
+}
+/*pai*/
+ul{
+    width: 100%;
+    height:15px;
+    border: 1px solid red;
+    
+
+}
+/*filho*/
+
+ul li{
+
+    display: inline;
+    padding-left: 80px;
+}
+/*neto*/
+ul li a{
+    text-decoration: none;
 
 }
