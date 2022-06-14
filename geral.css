@@ -60,7 +60,6 @@ ul li a:hover{
    
 }
 
-
 #principal{
     width:100%;
     height:500px;
@@ -70,4 +69,8 @@ ul li a:hover{
     width:100%;
     height:50px;
     border:2px solid red;
+}
+
+#busca{
+    margin-left: 900px;
 }
