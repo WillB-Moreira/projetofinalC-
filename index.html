@@ -16,6 +16,11 @@
 
     </style>
 
+<script type="text/javascript" src="Bibliotecas/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="plug-in/coin-slider.min.js"></script>
+<link rel="stylesheet" href="plug-in/coin-slider-styles.css" type="text/css" />
+
+
 </head>
 <body>
     <div id="topo">
@@ -29,41 +34,43 @@
             <li><a href="faleconosco.html"><img src="imagens/imagemWhatsapp.png" </a></li>
             <li><a href="Instragram.html"><img src="imagens/imagemInstagram.png" </a></li>
          </ul>
-        </nav> 
+        </nav>
+
+       <div id="busca">
+        <form action="#" method="post">
+            pesquisa <input type="text">
+            <img src ="imagens/lupa.png">
+
+            </form>
+        
+       </div> 
+        
     </div>
      
 
-    <div id="principal">
-    <p style="text-align:center;">        
-         <strong>Objetivos:</strong>
-         <em>aplicar conhecimentos do curso de <strong>Desenvolvedor C#</strong>
-         </em>
-    </p>
+    <main>
+
+        <div id='coin-slider'>
+            <a href="img01_url" target="_blank">
+                <img src='imagens/Caneca4.jpg' >
+                <span>
+                    Description for img01
+                </span>
+            </a>
+            ......
+            ......
+            <a href="imgN_url">
+                <img src='imgN.jpg' >
+                <span>
+                    Description for imgN
+                </span>
+            </a>
+        </div>
+
+
+    </main>
+
     
-    <!--Exemplo de CSS Inline-->
-    <p style="font-size:25px; text-align: center;">
-        
-        Projeto Escola IA - será desenvolvido pelos alunos do SENAI 
-        Brasília, 
-        do curso de Desenvolvedor C#,
-        nesse projeto os alunos terão a 
-        oportunidade de demonstrar competências técnicas
-        no desenvolvimento FULLSTACK.
-
-          
-    </p>
-    <p style="text-align:center;">
-
-       O Senai Brasília fica localizado na Capítal Federal
-       próximo aos grandes poderes do nosso país.
-            
-    </p>
-
-    <p style="text-align:center;">
-      A Equipe é formada por professores, alunos especialistas e  profissionais
-      do mercado local.
-    </p>
-
     </div>
     <div id="rodape">
         CanecaNerd &copy;
@@ -71,3 +78,9 @@
 
 </body>
 </html>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#coin-slider').coinslider();
+    });
+</script>
